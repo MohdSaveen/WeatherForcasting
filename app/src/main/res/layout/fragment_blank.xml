@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
+    android:id="@+id/bgView"
     tools:context=".BlankFragment"
     tools:layout_editor_absoluteX="-13dp"
     tools:layout_editor_absoluteY="0dp">
@@ -14,6 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:textColor="@color/white"
         android:layout_marginEnd="16dp"
         android:text="6.0"
         android:textSize="14sp"
@@ -26,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
         android:text="30"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -37,6 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
         android:text="4kmh"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -48,6 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
         android:text="N"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -59,6 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:textColor="@color/white"
         android:layout_marginTop="8dp"
         android:text="Pressure"
         android:textSize="14sp"
@@ -70,6 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:textColor="@color/white"
         android:text="Sunrise"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/windSpeedShowing"
@@ -78,6 +84,7 @@
     <TextView
         android:id="@+id/sunsetView"
         android:layout_width="wrap_content"
+        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:text="Sunset"
@@ -90,6 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
+        android:textColor="@color/white"
         android:text="Dew Point"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -101,6 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
         android:text="6.0"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -112,6 +121,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
         android:text="4kmh"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -124,6 +134,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:text="30"
+        android:textColor="@color/white"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -134,6 +145,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
         android:text="N"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -144,6 +156,7 @@
         android:id="@+id/tempView"
         android:layout_width="78dp"
         android:layout_height="66dp"
+        android:textColor="@color/white"
         android:layout_marginTop="64dp"
         android:text="33"
         android:textAlignment="center"
@@ -158,6 +171,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:textColor="@color/white"
         android:layout_marginTop="56dp"
         android:text="Sunny"
         android:textSize="20sp"
@@ -170,6 +184,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:textColor="@color/white"
         android:text="Uv Index"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -182,6 +197,7 @@
         android:layout_marginStart="16dp"
         android:text="Relative Humidity"
         android:textSize="14sp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/uvView" />
 
@@ -191,6 +207,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Wind Speed"
+        android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/humidtyView" />
@@ -201,6 +218,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Wind From"
+        android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/windkphView" />
@@ -226,10 +244,9 @@
     <RelativeLayout
         android:id="@+id/RelativeLayout"
         android:layout_width="0dp"
-        android:layout_height="106dp"
+        android:layout_height="140dp"
         android:layout_marginTop="20dp"
         android:background="@android:drawable/screen_background_dark_transparent"
-        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
@@ -242,9 +259,11 @@
             android:layout_marginStart="16dp"
             android:text="Hourly Forecast"
             android:textSize="18sp"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hoursRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/textView49"
@@ -257,11 +276,12 @@
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="350dp"
+        android:layout_marginTop="10dp"
         android:background="@android:drawable/screen_background_dark_transparent"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RelativeLayout">
 
         <TextView
             android:id="@+id/textView50"
@@ -269,11 +289,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
+            android:textColor="@color/white"
             android:text="Daily Forecast"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/dailyRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/textView50"
@@ -287,20 +310,67 @@
         android:layout_height="wrap_content"
         android:text="o"
         android:textSize="24sp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/tempView"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/tempView"
         app:layout_constraintTop_toTopOf="@+id/tempView" />
 
     <TextView
-        android:id="@+id/textView48"
+        android:id="@+id/currentMinTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="21"
+        app:layout_constraintBottom_toBottomOf="@+id/tempView"
+        app:layout_constraintEnd_toStartOf="@+id/currentMaxTemp"
+        app:layout_constraintTop_toBottomOf="@+id/textView47"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="99dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentMaxTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:text="21/33"
-        app:layout_constraintBottom_toBottomOf="@+id/tempView"
+        android:textColor="@color/white"
+        android:text="33"
+        app:layout_constraintBottom_toBottomOf="@+id/currentMinTemp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/textView47"
-        app:layout_constraintVertical_bias="0.933" />
+        app:layout_constraintTop_toTopOf="@+id/currentMinTemp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/searchItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:src="@drawable/ic_baseline_search_24"
+        app:layout_constraintBottom_toBottomOf="@+id/locationTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/locationTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/listImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_baseline_list_24"
+        app:layout_constraintBottom_toBottomOf="@+id/searchItem"
+        app:layout_constraintStart_toEndOf="@+id/searchItem"
+        app:layout_constraintTop_toTopOf="@+id/searchItem"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

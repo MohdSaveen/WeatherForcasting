@@ -2,51 +2,69 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/dailyWeatherView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2021-11-13"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView10"
-        app:layout_constraintStart_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="232dp"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/white"
         android:text="Sunny"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <TextView
+        android:id="@+id/dailyDateView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toTopOf="@+id/textView10"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        android:textColor="@color/white"
+        android:text="2021-11-13"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/dailyWeatherView"
+        app:layout_constraintStart_toStartOf="@+id/dailyWeatherView"
+        app:layout_constraintTop_toBottomOf="@+id/dailyWeatherView" />
+
+    <ImageView
+        android:id="@+id/dailyImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toBottomOf="@+id/dailyDateView"
+        app:layout_constraintEnd_toStartOf="@+id/dailyMinTempView"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toEndOf="@+id/dailyDateView"
+        app:layout_constraintTop_toTopOf="@+id/dailyWeatherView" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/dailyMinTempView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="28dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginEnd="60dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dailyImageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.769" />
+        app:layout_constraintTop_toTopOf="@+id/dailyImageView"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <TextView
+        android:id="@+id/dailyMaxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/dailyMinTempView"
+        app:layout_constraintStart_toEndOf="@+id/dailyMinTempView"
+        app:layout_constraintTop_toTopOf="@+id/dailyMinTempView" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

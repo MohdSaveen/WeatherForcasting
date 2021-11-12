@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="48dp"
+        android:text="Heat index Temp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/feelsLikeShowing"
+        app:layout_constraintTop_toBottomOf="@+id/pagerText" />
+
+    <TextView
+        android:id="@+id/heatIndexShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView60"
+        app:layout_constraintStart_toStartOf="@+id/textView60"
+        app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/heatIndexShowing"
+        app:layout_constraintEnd_toStartOf="@+id/textView60"
+        app:layout_constraintTop_toTopOf="@+id/textView60"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_heat_wave" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="468dp"
+        android:text="Pressure"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerText" />
+
+    <TextView
+        android:id="@+id/pressureShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView58"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pressureShowing"
+        app:layout_constraintEnd_toStartOf="@+id/textView58"
+        app:layout_constraintTop_toTopOf="@+id/textView58"
+        app:srcCompat="@drawable/ic_speedometer" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="468dp"
+        android:text="Chance of Rain"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerText" />
+
+    <TextView
+        android:id="@+id/chanceOfRainShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView56"
+        app:layout_constraintStart_toEndOf="@+id/imageView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/chanceOfRainShowing"
+        app:layout_constraintEnd_toStartOf="@+id/textView56"
+        app:layout_constraintTop_toTopOf="@+id/textView56"
+        app:srcCompat="@drawable/ic_cloud_rain" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="372dp"
+        android:text="Visiblity"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerText" />
+
+    <TextView
+        android:id="@+id/visiblityShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView54"
+        app:layout_constraintStart_toEndOf="@+id/imageView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/visiblityShowing"
+        app:layout_constraintEnd_toStartOf="@+id/textView54"
+        app:layout_constraintTop_toTopOf="@+id/textView54"
+        app:srcCompat="@drawable/ic_eye_look" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="372dp"
+        android:text="Cloud Cover"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerText" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cloudCoverShowing"
+        app:layout_constraintEnd_toStartOf="@+id/textView52"
+        app:layout_constraintTop_toTopOf="@+id/textView52"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_cloudy" />
+
+    <TextView
+        android:id="@+id/cloudCoverShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView52"
+        app:layout_constraintStart_toStartOf="@+id/textView52"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="284dp"
+        android:text="Humidity"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerText" />
+
+    <TextView
+        android:id="@+id/humidityShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView50"
+        app:layout_constraintStart_toStartOf="@+id/textView50"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/humidityShowing"
+        app:layout_constraintEnd_toStartOf="@+id/textView50"
+        app:layout_constraintTop_toTopOf="@+id/textView50"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_drop_humidity" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="284dp"
+        android:text="Wind From"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerText" />
+
+    <TextView
+        android:id="@+id/windFromShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView48"
+        app:layout_constraintStart_toStartOf="@+id/textView48"
+        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/windFromShowing"
+        app:layout_constraintEnd_toStartOf="@+id/textView48"
+        app:layout_constraintTop_toTopOf="@+id/textView48"
+        app:srcCompat="@drawable/ic_direction_road_sign" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="208dp"
+        android:text="Gust"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerText" />
+
+    <TextView
+        android:id="@+id/gustShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView46"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gustShowing"
+        app:layout_constraintEnd_toStartOf="@+id/textView46"
+        app:layout_constraintTop_toTopOf="@+id/textView46"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_wind" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="204dp"
+        android:text="WindSpeed"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerText" />
+
+    <TextView
+        android:id="@+id/windSpeedShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView44"
+        app:layout_constraintStart_toStartOf="@+id/textView44"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/windSpeedShowing"
+        app:layout_constraintEnd_toStartOf="@+id/textView44"
+        app:layout_constraintTop_toTopOf="@+id/textView44"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/ic_windmill" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="132dp"
+        android:text="Wind Chill TEMP"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerText" />
+
+    <TextView
+        android:id="@+id/windChillShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView42"
+        app:layout_constraintStart_toEndOf="@+id/imageView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/windChillShowing"
+        app:layout_constraintEnd_toStartOf="@+id/textView42"
+        app:layout_constraintTop_toTopOf="@+id/textView42"
+        app:srcCompat="@drawable/ic_snowflake" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="128dp"
+        android:text="Dew Point"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerText" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/dewPointShowing"
+        app:layout_constraintEnd_toStartOf="@+id/textView41"
+        app:layout_constraintTop_toTopOf="@+id/textView41"
+        app:srcCompat="@drawable/water_drop_teardrop" />
+
+    <TextView
+        android:id="@+id/dewPointShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView41"
+        app:layout_constraintStart_toStartOf="@+id/textView41"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/PagerFeelsLike"
+        app:layout_constraintTop_toTopOf="@+id/PagerFeelsLike"
+        app:srcCompat="@drawable/ic_temperature_heat" />
+
+    <TextView
+        android:id="@+id/feelsLikeShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/PagerFeelsLike"
+        app:layout_constraintStart_toStartOf="@+id/PagerFeelsLike"
+        app:layout_constraintTop_toBottomOf="@+id/PagerFeelsLike" />
+
+    <TextView
+        android:id="@+id/pagerTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="21"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pagerImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toBottomOf="@+id/pagerTemp"
+        app:layout_constraintEnd_toStartOf="@+id/pagerTemp"
+        app:layout_constraintTop_toTopOf="@+id/pagerTemp" />
+
+    <TextView
+        android:id="@+id/pagerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunny"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/pagerTemp"
+        app:layout_constraintStart_toStartOf="@+id/pagerImage"
+        app:layout_constraintTop_toBottomOf="@+id/pagerImage" />
+
+    <TextView
+        android:id="@+id/PagerFeelsLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="40dp"
+        android:text="Feels like"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagerText" />
+
+    <TextView
+        android:id="@+id/dateShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pagerTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
